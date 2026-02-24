@@ -1,46 +1,20 @@
 {
   "type": "object",
   "properties": {
-    "sibling": {
-      "type": "string"
-    },
-    "product_type": {
-      "type": "string"
-    },
-    "gender": {
-      "type": "string"
-    },
-    "stability": {
-      "type": "string"
-    },
-    "heel_height_mm": {
-      "type": ["number", "string"]
-    },
-    "toe_height_mm": {
-      "type": ["number", "string"]
-    },
-    "drop_mm": {
-      "type": ["number", "string"]
-    },
-    "weight_mens_grams": {
-      "type": ["number", "string"]
-    },
-    "weight_womens_grams": {
-      "type": ["number", "string"]
-    },
-    "cushion_level": {
-      "type": "string"
-    },
-    "best_use": {
-      "type": "string"
-    },
-    "surface": {
-      "type": "string"
-    }
+    "sibling": { "type": "string" },
+    "product_type": { "type": "string" },
+    "gender": { "type": "string" },
+    "stability": { "type": "string" },
+    "heel_height_mm": { "type": ["number", "string"] },
+    "toe_height_mm": { "type": ["number", "string"] },
+    "drop_mm": { "type": ["number", "string"] },
+    "weight_mens_grams": { "type": ["number", "string"] },
+    "weight_womens_grams": { "type": ["number", "string"] },
+    "cushion_level": { "type": "string" },
+    "best_use": { "type": "string" },
+    "surface": { "type": "string" },
+    "description_html": { "type": "string" }
   },
-  "required": [
-    "sibling",
-    "product_type"
-  ],
+  "required": ["sibling", "product_type", "description_html"],
   "additionalProperties": false
 }
