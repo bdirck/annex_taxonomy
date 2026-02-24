@@ -1,9 +1,21 @@
 {
-  "sibling": "",
-  "product_type": "",
-  "gender": "",
-  "stability": "",
-  "cushion_level": "",
-  "best_use": "",
-  "surface": ""
+  "type": "object",
+  "properties": {
+    "sibling": { "type": "string" },
+    "product_type": { "type": "string" },
+    "gender": { "type": "string" },
+    "stability": { "type": "string" },
+    "cushion_level": { "type": "string" },
+    "best_use": { "type": "string" },
+    "surface": { "type": "string" }
+  },
+  "required": [
+    "sibling",
+    "product_type",
+    "gender",
+    "stability",
+    "cushion_level",
+    "best_use",
+    "surface"
+  ]
 }
