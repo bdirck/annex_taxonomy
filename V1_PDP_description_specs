@@ -14,13 +14,13 @@
       "type": "string",
       "description": "Drop in millimeters or 'Not confirmed'"
     },
-    "weight_mens_grams": {
+    "weight_grams": {
       "type": "string",
-      "description": "Men's weight in grams or 'Not confirmed'"
+      "description": "Published weight in grams only, numeric string, or 'Not confirmed'"
     },
-    "weight_womens_grams": {
+    "weight_reference": {
       "type": "string",
-      "description": "Women's weight in grams or 'Not confirmed'"
+      "description": "Exact manufacturer reference size for weight or 'Not confirmed'"
     },
     "description_html": {
       "type": "string",
@@ -35,8 +35,8 @@
     "heel_height_mm",
     "toe_height_mm",
     "drop_mm",
-    "weight_mens_grams",
-    "weight_womens_grams",
+    "weight_grams",
+    "weight_reference",
     "description_html",
     "seo_meta_description"
   ]
