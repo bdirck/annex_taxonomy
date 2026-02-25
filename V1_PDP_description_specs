@@ -4,23 +4,23 @@
   "properties": {
     "heel_height_mm": {
       "type": "string",
-      "description": "Heel stack height in millimeters or 'Not confirmed'"
+      "description": "Heel stack height formatted like '28mm' or 'Not confirmed'"
     },
     "toe_height_mm": {
       "type": "string",
-      "description": "Toe stack height in millimeters or 'Not confirmed'"
+      "description": "Toe stack height formatted like '20mm' or 'Not confirmed'"
     },
     "drop_mm": {
       "type": "string",
-      "description": "Drop in millimeters or 'Not confirmed'"
+      "description": "Drop formatted like '8mm' or 'Not confirmed'"
     },
     "weight_grams": {
       "type": "string",
-      "description": "Published weight in grams only, numeric string, or 'Not confirmed'"
+      "description": "Weight formatted like '275g' or 'Not confirmed'"
     },
     "weight_reference": {
       "type": "string",
-      "description": "Exact manufacturer reference size for weight or 'Not confirmed'"
+      "description": "Exact manufacturer reference size or 'Not confirmed'"
     },
     "description_html": {
       "type": "string",
