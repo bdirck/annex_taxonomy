@@ -1,8 +1,43 @@
 {
-  "heel_height_mm": "",
-  "toe_height_mm": "",
-  "drop_mm": "",
-  "weight_mens_grams": "",
-  "weight_womens_grams": "",
-  "description_html": ""
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "heel_height_mm": {
+      "type": "string",
+      "description": "Heel stack height in millimeters or 'Not confirmed'"
+    },
+    "toe_height_mm": {
+      "type": "string",
+      "description": "Toe stack height in millimeters or 'Not confirmed'"
+    },
+    "drop_mm": {
+      "type": "string",
+      "description": "Drop in millimeters or 'Not confirmed'"
+    },
+    "weight_mens_grams": {
+      "type": "string",
+      "description": "Men's weight in grams or 'Not confirmed'"
+    },
+    "weight_womens_grams": {
+      "type": "string",
+      "description": "Women's weight in grams or 'Not confirmed'"
+    },
+    "description_html": {
+      "type": "string",
+      "description": "Premium PDP HTML description"
+    },
+    "seo_meta_description": {
+      "type": "string",
+      "description": "Plain text SEO meta description"
+    }
+  },
+  "required": [
+    "heel_height_mm",
+    "toe_height_mm",
+    "drop_mm",
+    "weight_mens_grams",
+    "weight_womens_grams",
+    "description_html",
+    "seo_meta_description"
+  ]
 }
