@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "properties": {
+    "aa_compare_shoe1": {
+      "type": "string",
+      "description": "Name of a comparable running shoe from the same brand"
+    },
+    "aa_compare_text1": {
+      "type": "string",
+      "description": "1–2 sentence comparison explaining how this shoe differs from compare_shoe1"
+    },
+    "aa_compare_shoe2": {
+      "type": "string",
+      "description": "Name of a comparable running shoe from a different brand"
+    },
+    "aa_compare_text2": {
+      "type": "string",
+      "description": "1–2 sentence comparison explaining how this shoe differs from compare_shoe2"
+    },
+    "aa_faq_q1": {
+      "type": "string",
+      "description": "Customer-focused FAQ question"
+    },
+    "aa_faq_a1": {
+      "type": "string",
+      "description": "Clear, concise answer to FAQ question 1"
+    },
+    "aa_faq_q2": {
+      "type": "string",
+      "description": "Customer-focused FAQ question"
+    },
+    "aa_faq_a2": {
+      "type": "string",
+      "description": "Clear, concise answer to FAQ question 2"
+    },
+    "aa_faq_q3": {
+      "type": "string",
+      "description": "Customer-focused FAQ question"
+    },
+    "aa_faq_a3": {
+      "type": "string",
+      "description": "Clear, concise answer to FAQ question 3"
+    }
+  },
+  "required": [
+    "aa_compare_shoe1",
+    "aa_compare_text1",
+    "aa_compare_shoe2",
+    "aa_compare_text2",
+    "aa_faq_q1",
+    "aa_faq_a1",
+    "aa_faq_q2",
+    "aa_faq_a2",
+    "aa_faq_q3",
+    "aa_faq_a3"
+  ],
+  "additionalProperties": false
+}
