@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "aa_best_for": {
+      "type": "string",
+      "description": "One sentence describing the primary use case of the shoe"
+    },
+    "aa_fit_feel": {
+      "type": "string",
+      "description": "1–2 sentences describing underfoot ride and feel"
+    },
+    "aa_fit_notes": {
+      "type": "string",
+      "description": "1–2 sentences describing fit, sizing, and upper feel"
+    },
+    "aa_spec_foam_feel": {
+      "type": "string",
+      "description": "Short sentence describing cushioning sensation"
+    },
+    "aa_spec_foam_tech": {
+      "type": "string",
+      "description": "2–3 sentences explaining foam technology and performance"
+    },
+    "aa_injury_consideration": {
+      "type": "string",
+      "description": "1–2 sentences describing biomechanical or injury-related considerations"
+    }
+  },
+  "required": [
+    "aa_best_for",
+    "aa_fit_feel",
+    "aa_fit_notes",
+    "aa_spec_foam_feel",
+    "aa_spec_foam_tech",
+    "aa_injury_consideration"
+  ],
+  "additionalProperties": false
+}
