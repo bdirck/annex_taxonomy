@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Athletic Annex PDP Narrative",
+  "type": "object",
+  "properties": {
+    "aa_narrative": {
+      "type": "string",
+      "description": "Short 1-3 sentence narrative describing the shoe in Athletic Annex voice"
+    }
+  },
+  "required": ["aa_narrative"],
+  "additionalProperties": false
+}
