@@ -1,13 +1,47 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Athletic Annex Apparel Classification",
   "type": "object",
   "properties": {
     "sibling": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "tops",
+        "bottoms",
+        "outerwear",
+        "sports-bras",
+        "dresses"
+      ]
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "Men's",
+        "Women's",
+        "Unisex",
+        "Not confirmed"
+      ]
     },
     "product_type": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Short Sleeve",
+        "Long Sleeve",
+        "Tank",
+        "Singlet",
+        "Shorts",
+        "Tight",
+        "Pant",
+        "Jacket",
+        "Hoodie",
+        "Quarter Zip",
+        "Half Zip",
+        "Vest",
+        "Sports Bra",
+        "Dress"
+      ]
     }
   },
-  "required": ["sibling", "product_type"],
+  "required": ["sibling", "gender", "product_type"],
   "additionalProperties": false
 }
