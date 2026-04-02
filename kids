@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Athletic Annex Kids & Youth Classification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "breadcrumb_parent",
+    "sibling",
+    "product_type"
+  ],
+  "properties": {
+    "breadcrumb_parent": {
+      "type": "string",
+      "const": "kids-youth",
+      "description": "Parent category is fixed for this workflow"
+    },
+    "sibling": {
+      "type": "string",
+      "enum": [
+        "kids",
+        "youth"
+      ],
+      "description": "Sibling category under Kids & Youth"
+    },
+    "product_type": {
+      "type": "string",
+      "const": "Running & Walking Shoe",
+      "description": "Fixed product type for this workflow"
+    }
+  }
+}
