@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Athletic Annex Apparel PDP Content",
+  "type": "object",
+  "properties": {
+    "description_html": {
+      "type": "string",
+      "description": "Premium HTML product description for an apparel PDP"
+    },
+    "seo_meta_description": {
+      "type": "string",
+      "description": "Plain text SEO meta description for the apparel PDP",
+      "minLength": 120,
+      "maxLength": 170
+    }
+  },
+  "required": ["description_html", "seo_meta_description"],
+  "additionalProperties": false
+}
