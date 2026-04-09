@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Athletic Annex Accessories Classification",
+  "type": "object",
+  "properties": {
+    "sibling": {
+      "type": "string",
+      "enum": [
+        "headwear",
+        "gloves",
+        "socks",
+        "insoles",
+        "hydration",
+        "gear",
+        "sunglasses",
+        "electronics",
+        "recovery-tools",
+        "safety-visibility",
+        "bags",
+        "care-protection"
+      ]
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "Men's",
+        "Women's",
+        "Unisex",
+        "Not confirmed"
+      ]
+    },
+    "product_type": {
+      "type": "string",
+      "enum": [
+        "Performance Cap",
+        "Beanie",
+        "Headband",
+        "Neckwear",
+        "Gloves",
+        "Performance Sock",
+        "Compression Sock",
+        "Insole",
+        "Hydration Pack",
+        "Handheld Bottle",
+        "Waist Belt",
+        "Towels",
+        "Cups & Bottles",
+        "Laces",
+        "Performance Sunglasses",
+        "GPS Watch",
+        "Heart Rate Monitor",
+        "Headphones",
+        "Foam Roller",
+        "Massage Tool",
+        "Compression Device",
+        "Percussion Massager",
+        "Reflective Gear",
+        "Lighting Device",
+        "Sling Bag",
+        "Arm Bands",
+        "Running Belt",
+        "Anti-chafe",
+        "Topical Therapy"
+      ]
+    }
+  },
+  "required": ["sibling", "gender", "product_type"],
+  "additionalProperties": false
+}
