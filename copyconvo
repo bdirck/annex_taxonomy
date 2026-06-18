@@ -1,6 +1,18 @@
 {
   "type": "object",
   "properties": {
+    "aa_spec_use": {
+      "type": "string",
+      "description": "Short phrase describing the primary intended use of the shoe, such as daily training, tempo work, racing, trail running, or walking"
+    },
+    "aa_spec_surface": {
+      "type": "string",
+      "description": "Short phrase describing the intended running surface, such as road, trail, track, treadmill, or mixed surfaces"
+    },
+    "aa_category": {
+      "type": "string",
+      "description": "Short category label for the shoe, such as daily trainer, stability trainer, max cushion trainer, speed trainer, racing shoe, trail shoe, or walking shoe"
+    },
     "aa_best_for": {
       "type": "string",
       "description": "One sentence describing the primary use case of the shoe"
@@ -27,6 +39,9 @@
     }
   },
   "required": [
+    "aa_spec_use",
+    "aa_spec_surface",
+    "aa_category",
     "aa_best_for",
     "aa_fit_feel",
     "aa_fit_notes",
