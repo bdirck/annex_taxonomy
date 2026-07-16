@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "description_html": {
+      "type": "string",
+      "description": "Premium PDP HTML description. Must be valid HTML using only <p>, <ul>, <li>, and <strong> tags. Return an empty string if a description cannot be generated."
+    },
+    "seo_meta_description": {
+      "type": "string",
+      "description": "Plain text SEO meta description, ideally 150-160 characters. Must not include gender-specific language such as Men's, Women's, Unisex, Kids, Youth, Boys, or Girls. Return an empty string if a meta description cannot be generated."
+    }
+  },
+  "required": [
+    "description_html",
+    "seo_meta_description"
+  ]
+}
