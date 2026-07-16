@@ -2,42 +2,58 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "core_model_name": {
+      "type": "string",
+      "description": "Normalized core model name used for research, such as 'GT-2000 15', 'Bondi 9', or 'Cloudrunner 3'. Return an empty string if unclear."
+    },
     "heel_height_mm": {
       "type": "string",
-      "description": "Heel stack height formatted like '28mm' or 'Not confirmed'"
+      "description": "Heel stack height formatted like '28mm' or '36.5mm'. Return an empty string if not found."
     },
     "toe_height_mm": {
       "type": "string",
-      "description": "Toe stack height formatted like '20mm' or 'Not confirmed'"
+      "description": "Toe or forefoot stack height formatted like '20mm' or '34.5mm'. Return an empty string if not found."
     },
     "drop_mm": {
       "type": "string",
-      "description": "Drop formatted like '8mm' or 'Not confirmed'"
+      "description": "Heel-to-toe drop formatted like '8mm' or '5.5mm'. Return an empty string if not found."
     },
     "weight_grams": {
       "type": "string",
-      "description": "Weight formatted like '275g' or 'Not confirmed'"
+      "description": "Published reference weight formatted like '275g'. Return an empty string if not found."
     },
     "weight_reference": {
       "type": "string",
-      "description": "Exact manufacturer reference size or 'Not confirmed'"
+      "description": "Exact published reference size, such as 'Men's US 9', 'Women's US 8', or 'Sample size not listed'. Return an empty string if not found."
     },
-    "description_html": {
+    "spec_confidence": {
       "type": "string",
-      "description": "Premium PDP HTML description"
+      "enum": ["high", "medium", "low", ""],
+      "description": "Confidence in the returned specs. Use 'high', 'medium', or 'low'. Return an empty string only if no useful specs were found."
     },
-    "seo_meta_description": {
+    "spec_notes": {
       "type": "string",
-      "description": "Plain text SEO meta description"
+      "description": "One short sentence explaining important assumptions, conflicts, or source limitations. Return an empty string if no note is needed."
+    },
+    "primary_source": {
+      "type": "string",
+      "description": "Primary source name and URL used for the spec decision. Return an empty string if no source was used."
+    },
+    "secondary_source": {
+      "type": "string",
+      "description": "Secondary source name and URL used for support or clarification. Return an empty string if no secondary source was used."
     }
   },
   "required": [
+    "core_model_name",
     "heel_height_mm",
     "toe_height_mm",
     "drop_mm",
     "weight_grams",
     "weight_reference",
-    "description_html",
-    "seo_meta_description"
+    "spec_confidence",
+    "spec_notes",
+    "primary_source",
+    "secondary_source"
   ]
 }
