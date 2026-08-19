@@ -1,13 +1,39 @@
 {
   "type": "object",
   "properties": {
-    "sibling": { "type": "string" },
-    "product_type": { "type": "string" },
-    "gender": { "type": "string" },
-    "stability": { "type": "string" },
-    "cushion_level": { "type": "string" },
-    "best_use": { "type": "string" },
-    "surface": { "type": "string" }
+    "sibling": {
+      "type": "string"
+    },
+    "product_type": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "stability": {
+      "type": "string"
+    },
+    "cushion_level": {
+      "type": "string"
+    },
+    "aa_best_for": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "surface": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "aa_has_plate": {
+      "type": "string"
+    },
+    "aa_plate_type": {
+      "type": "string"
+    }
   },
   "required": [
     "sibling",
@@ -15,7 +41,10 @@
     "gender",
     "stability",
     "cushion_level",
-    "best_use",
-    "surface"
-  ]
+    "aa_best_for",
+    "surface",
+    "aa_has_plate",
+    "aa_plate_type"
+  ],
+  "additionalProperties": false
 }
