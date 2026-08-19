@@ -2,47 +2,128 @@
   "type": "object",
   "properties": {
     "sibling": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "running-walking",
+        "trail-outdoor",
+        "speed-racing",
+        "gym-training",
+        "sandals-slides",
+        "track-field",
+        "cross-country",
+        "pickleball"
+      ]
     },
     "product_type": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Running & Walking Shoe",
+        "Recovery Footwear",
+        "Cross-Training Shoe",
+        "Trail Running Shoe",
+        "Hiking Shoe",
+        "Hiking Boot",
+        "Sprint Spike",
+        "Distance Spike",
+        "Jump Spike",
+        "Throwing Shoe",
+        "Multi-Event Spike",
+        "Cross Country Spike",
+        "Sandal",
+        "Slide",
+        "Pickleball Shoe"
+      ]
     },
-    "gender": {
-      "type": "string"
+    "aa_gender": {
+      "type": "string",
+      "enum": [
+        "Men's",
+        "Women's",
+        "Unisex",
+        ""
+      ]
     },
-    "stability": {
-      "type": "string"
+    "aa_stability": {
+      "type": "string",
+      "enum": [
+        "Neutral",
+        "Stability",
+        ""
+      ]
     },
-    "cushion_level": {
-      "type": "string"
+    "aa_spec_cushion": {
+      "type": "string",
+      "enum": [
+        "Low Cushion",
+        "Medium Cushion",
+        "High Cushion",
+        "Max Cushion",
+        "Spike",
+        ""
+      ]
     },
     "aa_best_for": {
       "type": "array",
       "items": {
-        "type": "string"
-      }
+        "type": "string",
+        "enum": [
+          "Recovery / Easy Runs",
+          "Daily Training",
+          "Long Runs",
+          "Tempo / Threshold",
+          "Intervals / Speedwork",
+          "Race Day",
+          "Walking / All-Day Wear",
+          "Gym / Training"
+        ]
+      },
+      "uniqueItems": true
     },
-    "surface": {
+    "aa_spec_surface": {
       "type": "array",
       "items": {
-        "type": "string"
-      }
+        "type": "string",
+        "enum": [
+          "Roads & Pavement",
+          "Trail",
+          "Track",
+          "Treadmill",
+          "Court",
+          "Gym Floor",
+          "Cross Country"
+        ]
+      },
+      "uniqueItems": true
     },
     "aa_has_plate": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "Yes",
+        "No",
+        ""
+      ]
     },
     "aa_plate_type": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "None",
+        "Carbon Fiber",
+        "Nylon",
+        "Composite / Plastic",
+        "Stability Plate / Shank",
+        "Other",
+        ""
+      ]
     }
   },
   "required": [
     "sibling",
     "product_type",
-    "gender",
-    "stability",
-    "cushion_level",
+    "aa_gender",
+    "aa_stability",
+    "aa_spec_cushion",
     "aa_best_for",
-    "surface",
+    "aa_spec_surface",
     "aa_has_plate",
     "aa_plate_type"
   ],
