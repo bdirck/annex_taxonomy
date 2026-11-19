@@ -1,19 +1,27 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Athletic Annex Apparel PDP Content",
+  "title": "Athletic Annex Accessories PDP Content",
   "type": "object",
   "properties": {
     "description_html": {
       "type": "string",
-      "description": "Premium HTML product description for an apparel PDP"
+      "description": "Premium HTML product description for an accessories PDP"
     },
     "seo_meta_description": {
       "type": "string",
-      "description": "Plain text SEO meta description for the apparel PDP",
+      "description": "Plain text SEO meta description for the accessories PDP",
       "minLength": 120,
       "maxLength": 170
+    },
+    "aa_narrative": {
+      "type": "string",
+      "description": "A single, cohesive, human-friendly paragraph derived exclusively from description_html. Must preserve all meaningful product information, benefits, materials, specifications, and intended uses found in the HTML description. Remove all HTML tags, formatting, bullet points, and markdown. Integrate the benefits naturally into flowing prose without introducing new claims or omitting substantive details."
     }
   },
-  "required": ["description_html", "seo_meta_description"],
+  "required": [
+    "description_html",
+    "seo_meta_description",
+    "aa_narrative"
+  ],
   "additionalProperties": false
 }
